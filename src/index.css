@@ -1,0 +1,292 @@
+.message, .messageown{
+  margin-bottom: 8px;
+  padding: 3px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+}
+.message{
+  color: hsl(0, 0%, 90%);
+  justify-self: start;
+  background-color: hsl(0, 0%, 31%);
+}
+.messageown{
+  color: hsl(0, 0%, 90%);
+  justify-self: end;
+  background-color: hsl(131, 100%, 35%);
+}
+.messages{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: end;
+}
+.nameTitle{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(33, 100%, 73%);
+  text-shadow:1px 1px 10px hsl(33, 100%, 43%);
+}
+.title{
+  font-size: 2.5em;
+  left: 0;
+  margin-left: 50px;
+}
+input, textarea, select {
+  font-size: 16px;
+}
+body{
+  touch-action: manipulation;
+  background-color: hsl(0, 0%, 27%);
+}
+.message-container{
+  margin-bottom: 130px;
+}
+.sendMsg{
+  border-radius: 50px;
+  border: none;
+  font-size: 1em;
+  background-color: hsl(120, 100%, 50%);
+}
+.input{
+  background-color: hsl(156, 100%, 32%);
+  border-radius: 15px;
+  flex: 0.9;
+}
+.profilePhoto{
+  width: 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.authTitle{
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.input-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  display: flex;
+  background-color: hsl(0, 0%, 16%);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.authInput{
+  font-size: 1.5em;
+  border-radius: 10px;
+  width: 350px;
+}
+.desc{
+  font-size: 0.5em;
+}
+.login{
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5em;
+  margin: 30px;
+  background-color: hsl(240, 100%, 50%);
+  padding: 5px;
+  transition: 0.7s;
+}
+.login:hover{
+  cursor: pointer;
+  padding: 10px;
+  background-color: hsl(240, 100%, 60%);
+}
+.login:active{
+  background-color: hsl(240, 100%, 70%);
+}
+.signin{
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5em;
+  margin: 30px;
+  background-color: hsl(120, 100%, 50%);
+  padding: 5px;
+  transition: 0.7s;
+}
+.signin:hover{
+  cursor: pointer;
+  padding: 10px;
+  background-color: hsl(120, 100%, 60%);
+}
+.signin:active{
+  padding: 10px;
+  background-color: hsl(120, 100%, 70%);
+}
+.image{
+  width: 200px;
+  border-radius: 15px;
+}
+.hamburger-button {
+  position: fixed;
+  top: 7px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: hsl(210, 29%, 29%);
+  transition: 1s;
+}
+.hamburger-button:hover{
+  cursor: pointer;
+  background-color: hsl(210, 29%, 39%);
+  width: 50px;
+  height: 50px;
+}
+.hamburger-button:active{
+  background-color: hsl(210, 29%, 49%);
+}
+.decline-button{
+  position: absolute;
+  right: 0;
+  color: red;
+  font-size: 1.5em;
+  background-color: hsl(210, 29%, 29%);
+  border: none;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  margin-right:10px ;
+  transition: background-color 0.3s;
+}
+.decline-button:hover{
+  background-color: hsl(210, 29%, 39%);
+}
+.decline-button:active{
+  background-color: hsl(210, 29%, 49%);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: hsl(210, 29%, 29%);
+  color: hsl(192, 15%, 94%);
+  box-shadow: 2px 0 5px hsla(0, 0%, 0%, 0.2);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.chatroom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chatroom-list li {
+  margin-bottom: 10px;
+}
+
+.chatroom-list button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: hsl(210, 29%, 24%);
+  color: hsl(192, 15%, 94%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.chatroom-list button:hover {
+  background-color: hsl(168, 76%, 42%);
+}
+
+.deleteRoomBtn{
+  background-color: red;
+}
+.SignOut{
+  position: fixed;
+  right: 10px;
+  top: 7px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: hsl(0, 100%, 30%);
+  transition: 1s;
+  z-index: 1;
+}
+.SignOut:hover{
+  background-color: hsl(0, 100%, 50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.pageList{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(43, 43, 46);
+}
+.pageList li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.Title{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.addRoomBtn{
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(120, 100%, 43%);
+  transition: 0.5s;
+}
+.addRoomBtn:hover{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: hsl(120, 100%, 33%);
+}
+.addRoomBtn:active{
+  background-color: hsl(120, 100%, 23%);
+}
+.addRoomInput{
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 200px;
+  margin-left: 5px;
+}
+.roomTitle{
+  font-size: 2em;
+  text-align: right;
+}
